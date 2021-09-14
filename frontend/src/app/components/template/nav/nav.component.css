@@ -6,7 +6,9 @@
 .sidenav i {
   padding-right: 10px;
 }
-
+.container {
+  background-color: #202024;
+}
 .content {
   padding: 16px;
   background-color: #121214;
