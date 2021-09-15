@@ -1,7 +1,13 @@
 table {
-  width: 100%;
+  width: 70%;
+  margin: auto;
+  background-color: #292929;
 }
 
+table th {
+  padding-top: 10px;
+  font-size: 1rem;
+}
 .edit {
   margin-right: 10px;
 }

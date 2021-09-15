@@ -1,4 +1,4 @@
-<div class="mat-elevation-z4">
+<div>
   <table mat-table [dataSource]="products">
     <!-- Id Column -->
     <ng-container matColumnDef="id">
@@ -25,8 +25,8 @@
         <a routerLink="/products/update/{{ row.id }}" class="edit"
           ><i class="material-icons">edit</i></a
         >
-        <a routerLink="/products/delete/{{ row.id }}" class="delete"
-          ><i class="material-icons">delete</i></a
+        <a routerLink="/products/delete/{{ row.id }}"
+          ><i class="material-icons" appRed>delete</i></a
         >
       </td>
     </ng-container>

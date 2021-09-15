@@ -1,15 +1,11 @@
-.sidenav {
-  background-color: #202024;
-  width: 200px;
-}
-
-.sidenav i {
-  padding-right: 10px;
-}
-.container {
+nav,
+.navbar-menu {
   background-color: #202024;
 }
-.content {
-  padding: 16px;
-  background-color: #121214;
+a {
+  color: #fff;
 }
+/* a:hover {
+  background-color: #00d1b2;
+  color: #202024;
+} */

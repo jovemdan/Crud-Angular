@@ -1,23 +1,54 @@
-<mat-sidenav-container class="container">
-  <mat-sidenav
-    class="sidenav"
-    mode="side"
-    opened
-    fixedInViewport="true"
-    fixedTopGap="80"
-  >
-    <mat-nav-list class="nav-list">
-      <a mat-list-item routerLink="/">
-        <i class="material-icons">home</i>
-        Início
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" routerLink="/">
+      <img
+        src="https://bulma.io/images/bulma-logo.png"
+        width="112"
+        height="28"
+      />
+    </a>
+
+    <a
+      (click)="toggleNavbar()"
+      role="button"
+      #navBurger
+      class="navbar-burger burger"
+      aria-label="menu"
+      aria-expanded="false"
+      data-target="navbarBasicExample"
+    >
+      <span aria-hidden="true"> </span>
+      <span aria-hidden="true"> </span>
+      <span aria-hidden="true"> </span>
+    </a>
+  </div>
+
+  <div id="navbarBasicExample" class="navbar-menu" #navMenu>
+    <div class="navbar-start">
+      <a
+        class="navbar-item"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        Home
       </a>
-      <a mat-list-item routerLink="/products">
-        <i class="material-icons">storefront</i>
+
+      <a class="navbar-item" routerLink="/products" routerLinkActive="active">
         Produtos
       </a>
-    </mat-nav-list>
-  </mat-sidenav>
-  <mat-sidenav-content class="content">
-    <router-outlet></router-outlet>
-  </mat-sidenav-content>
-</mat-sidenav-container>
+    </div>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <div class="buttons">
+          <a class="button is-primary">
+            <strong> Inscreva-se </strong>
+          </a>
+          <a class="button is-light"> Conecte-se </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+<router-outlet></router-outlet>

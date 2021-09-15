@@ -1,26 +1,46 @@
-<mat-card>
-  <mat-card-title>Alterar Produto</mat-card-title>
-  <form>
-    <mat-form-field>
-      <input
-        matInput
-        placeholder="Nome"
-        [(ngModel)]="product.name"
-        name="name"
-      />
-    </mat-form-field>
-    <mat-form-field>
-      <input
-        matInput
-        placeholder="Preço (R$)"
-        [(ngModel)]="product.price"
-        name="price"
-      />
-    </mat-form-field>
-  </form>
-  <button mat-raised-button (click)="updateProduct()" color="accent">
-    Atualizar
-  </button>
-
-  <button mat-raised-button (click)="cancel()">Cancelar</button>
-</mat-card>
+<div class="hero">
+  <div class="hero-body">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-5">
+          <form action="" class="box">
+            <label class="label">Alterar Produto</label>
+            <div class="field">
+              <div class="control has-icons-left">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Nome"
+                  [(ngModel)]="product.name"
+                  name="name"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fa fa-envelope"></i>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <div class="control has-icons-left">
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Preço"
+                  [(ngModel)]="product.price"
+                  name="price"
+                />
+                <span class="icon is-small is-left">
+                  <i class="fa fa-lock"></i>
+                </span>
+              </div>
+            </div>
+            <div class="field">
+              <button class="button is-primary" (click)="updateProduct()">
+                Alterar
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

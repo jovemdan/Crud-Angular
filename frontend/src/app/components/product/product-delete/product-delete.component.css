@@ -3,6 +3,13 @@ form {
   flex-direction: column;
   margin-top: 20px;
 }
+
+.box {
+  background-color: #292929;
+}
+label {
+  color: #fff;
+}
 button {
   margin: 20px 15px 0px 0px;
 }
