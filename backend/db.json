@@ -11,14 +11,14 @@
       "price": 1200.89
     },
     {
-      "id": 3,
-      "name": "Samsung S20+",
-      "price": 500.89
+      "name": "Camiseta PIET",
+      "price": "150",
+      "id": 4
     },
     {
-      "name": "Geladeira",
-      "price": 1913.99,
-      "id": 4
+      "name": "Camiseta Dior",
+      "price": "5000",
+      "id": 5
     }
   ]
 }

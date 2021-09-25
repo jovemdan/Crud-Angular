@@ -1,7 +1,12 @@
+h1 {
+  color: #fff;
+  margin-top: 20px;
+}
+
 .card {
   background-color: #292929;
-  margin-top: 50px;
-  width: min(90vw, 800px);
+  /* margin-top: 50px; */
+  /* width: min(90vw, 800px); */
 }
 .card-content .title {
   color: #fff;
